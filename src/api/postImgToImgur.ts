@@ -2,25 +2,6 @@ import axios from "axios";
 import { config } from "../config";
 
 const apikey = config.imgurId.id;
-// const accessToken = config.imgurId.accessToken;
-
-// export const uploadToImgur = async (dalleUrl: string) => {
-//   const response = await fetch("http://172.18.6.73:3000/upload-to-imgur", {
-//     method: "POST",
-//     headers: { "Content-Type": "application/json" },
-//     body: JSON.stringify({ imageUrl: dalleUrl }),
-//   });
-
-//   const data = await response.json();
-//   console.log(data);
-//   if (!response.ok) {
-//     console.log("aaaaa");
-//     throw new Error(data.error);
-//   };
-//   return data.link;
-// };
-
-// 用localhost會被擋
 
 export const postImgToCloudinary = async (props: string) => {
     const imageURL = props;

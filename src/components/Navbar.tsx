@@ -56,7 +56,7 @@ export const Navbar: FC = () => {
                 <div className="navbar-brand">
                     <NavLink 
                     className="navbar-item"
-                    to="weathercon"
+                    to="/"
                     >
                         <FontAwesomeIcon icon={faPersonDressBurst} />AI WEATHER OUTFIT
                     </NavLink>
@@ -80,7 +80,7 @@ export const Navbar: FC = () => {
                     <div className="navbar-start">
                         <NavLink 
                             className={({ isActive }) => `navbar-item ${isActive ? "has-text" : "" }`}
-                            to="weathercon/dressUpGA"
+                            to="/dressUpGA"
                         >
                             <FontAwesomeIcon icon={faCameraRetro} />/ 穿搭紀錄
                         </NavLink>

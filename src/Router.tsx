@@ -23,7 +23,7 @@ export const Router: FC = () => {
                     element: <Login />,
                 },
                 {
-                    path: 'weathercon',
+                    path: '/',
                     element: <WeatherContainer/>,
                     children: [
                         {
@@ -44,16 +44,4 @@ export const Router: FC = () => {
         <RouterProvider router={router}/>
     );
 
-    // return (
-    //     <BrowserRouter>
-    //         <Routes>
-    //             <Route path="/" element={<NavFotLayout/>}>
-    //                 <Route path="weathercon" element={<WeatherContainer />}>
-    //                     <Route index element={<WeatherAndDressUp />}/>
-    //                     <Route path="dressUpGA" element={<DressUpGallery/>}/>
-    //                 </Route>
-    //             </Route>
-    //         </Routes>    
-    //     </BrowserRouter>
-    // );
 };
