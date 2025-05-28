@@ -24,7 +24,7 @@ export const getDressUpImg = async (props: Props) => {
     Uniqlo's StyleHint. Set the background with landmarks from the city.`;
 
     const data = await openai.images.generate({
-        model: "dall-e-2",
+        model: "dall-e-3",
         prompt: weatherprompt,
         size: "1024x1024", 
         n: 1,
