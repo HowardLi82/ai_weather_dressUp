@@ -26,7 +26,7 @@ export const getWeatherInfo = async ( props: string ): Promise<weatherInfoProps>
 
 
     //取得 lat, lon數值 (獲得經緯度資訊)，取得經緯度後放進下方取得天氣的URL內
-    const {lat, lon} = (await axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${props}&appid=${apiKey}`)).data[0];
+    const {lat, lon} = (await axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${props}&appid=${apiKey}`)).data[0];
     //取得 所有天氣資訊
     const weatherInfo = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`);
     
