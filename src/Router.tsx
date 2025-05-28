@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { BrowserRouter, createBrowserRouter, Route, RouterProvider, Routes } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { NavFotLayout } from "./components/NavFotLayout";
 import { WeatherContainer } from "./components/WeatherContainer";
 import { WeatherAndDressUp } from "./components/WeatherAndDressUp";
