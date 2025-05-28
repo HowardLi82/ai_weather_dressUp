@@ -1,0 +1,100 @@
+.test {
+    .placeAndDressUp {
+        display: flex;
+        flex-wrap: wrap;
+        .columns {
+            width: 100%;
+            .column {
+                .city {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    .location {
+                        display: flex;
+                        .weatherDes {
+                            display: flex;
+                            flex-wrap: nowrap;
+                            width: 60%;
+                            img {
+                                height: 56px;
+                            }
+                            p {
+                                font-size: 2rem;
+                                margin-left: 1rem;
+                                margin-top: 0px;
+                            }
+                        }
+                        .select {
+                            margin-left: auto;
+                            margin-bottom: 1rem;
+                        }
+                    }
+
+                    .fixed-grid {
+                        height: 90%;
+                        .grid {
+                            height: 100%;
+                            flex-grow: 1;
+
+                            // id優先權大於class
+                            #sunUpDown {
+                                .card {
+                                    .card-content {
+                                        .mainInfo {
+                                            font-size: 16px;
+                                            white-space: pre-wrap;
+                                        }
+                                    }
+                                }
+
+                            }
+
+                            .card {
+                                border: 3px solid pink;
+                                .card-header {
+                                    .card-header-title {
+                                        background-color: pink;
+                                    }
+                                }
+                            }
+
+                            .card-content {
+                                padding: 1rem;
+                                .mainInfo {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    font-size: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .dressup {
+                    .select {
+                        margin-bottom: 1rem;
+                    }
+                    .imageCard {
+                        overflow: hidden;
+                        height: 512px;
+                        border-radius: 1rem;
+                        max-width: 100%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;  
+                        }
+                    }
+    
+                    .info {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+    }
+}

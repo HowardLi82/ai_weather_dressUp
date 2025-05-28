@@ -1,0 +1,14 @@
+.navbar {
+    background-color: #fee1e8;
+    .navbar-brand {
+        .navbar-item {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.3rem;
+        }
+    }
+}
+.navbar-item {
+    img {
+        max-height: unset;
+    }
+}

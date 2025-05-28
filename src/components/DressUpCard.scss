@@ -1,0 +1,30 @@
+.column {
+    .card-image {
+        border-radius: 1rem;
+        overflow: hidden;
+        .image {
+            aspect-ratio: 1; // ✅ 讓它維持正方形
+            background: lightblue;
+        };
+
+        .card-footer-item {
+            height: 4rem;
+            background-color: lightcoral;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            .left {
+                left: 0px;
+                display: flex;
+                align-items: center;
+                position: absolute;
+                left: 0px;
+            }
+            .time {
+                position: absolute;
+                right: 1em;
+            }
+        };
+    };
+
+};
