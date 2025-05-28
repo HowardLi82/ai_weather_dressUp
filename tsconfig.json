@@ -3,5 +3,12 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" },
-  ]
+  ],
+    "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "esnext",
+    "strict": true,
+    "jsx": "react-jsx" // 🔥 如果有使用 JSX，請加上這行
+  }
+
 }
