@@ -16,6 +16,7 @@
 ## 後端
 - Next.js
 - Firebase
+
   (後端專案在此帳戶下的ai_dressup_backend_2)
 ## API
 - OpenAI
