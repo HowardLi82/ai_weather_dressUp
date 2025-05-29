@@ -1,5 +1,7 @@
 # 隨天氣穿搭
 
+這是一個可以依照臺灣縣市，天氣，氣溫，穿搭風格等等資料來隨機搭配今天適合的穿著
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
