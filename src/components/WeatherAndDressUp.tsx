@@ -42,10 +42,10 @@ export const WeatherAndDressUp: FC = () => {
     const [dressTrigger, setDressTrigger] = useState<number>(0);
     const [dressCode, setDressCode] = useState<Record<string, any>>({});
     const [isWaiting, setIsWaiting] = useState<boolean>(false);
-    // 另一個板機，在拿到gpt畫的圖後才會啟動postImgToImgur這個function
+    // 第二個板機，在拿到gpt畫的圖後才會啟動postImgToImgur這個function
     const initPostToImgur: number = 0;
     const [postToImgur, setpostToImgur] = useState<number>(initPostToImgur);
-    // 第三個板機QQ，不太確定這樣寫行不行...
+    // 第三個板機，拿到後端回傳的url後，傳送到firestore
     const initPostToFirestore = 0;
     const [postFirestoreTrigger, setPostFirestoreTrigger] = useState<number>(initPostToFirestore);
     const [postToFirestore, setPostToFirestore] = useState<Record<string, any>>({});
