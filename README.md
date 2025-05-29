@@ -1,58 +1,41 @@
-# 隨天氣穿搭
+# 隨天氣穿搭網站
 
-這是一個可以依照臺灣縣市，天氣，氣溫，穿搭風格等等資料來隨機搭配今天適合的穿著
+這是一個可以依照臺灣縣市，天氣，氣溫，穿搭風格等等資料來隨機搭配今天適合的穿著，也可以瀏覽
+之前生成好的穿搭以便你日後想繼續那個樣子的搭配。\
 
-# React + TypeScript + Vite
+(目前生圖模型為dall-e-3，無法生出真人圖片，而且會稍微等一下)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 運行環境需求
 
-Currently, two official plugins are available:
+## 前端
+- React ^19.1.0
+- Vite ^6.3.1
+- TypeScript ~5.7.2
+- Bulma ^1.0.4
+- sass ^1.87.0
+## 後端
+- Next.js
+- Firebase
+  (後端專案在此帳戶下的ai_dressup_backend_2)
+## API
+- OpenAI
+- OpenWeatherMap
+- Firebase
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 環境檔(.env)
+-  OpenWeatherMap的API
+-  OpenAI的API
+## FirebaseConfig
+- apiKey
+- authDomain
+- projectId
+- storageBucket
+- messaginSenderId
+- appId
+- measurementId
 
-## Expanding the ESLint configuration
+## Demo影片
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+https://www.youtube.com/watch?v=N0OHb-MgT5Y
+![螢幕擷取畫面 2025-05-29 133033](https://github.com/user-attachments/assets/1a0d3223-0c9a-47b3-bfbb-0f10d49c1026)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
